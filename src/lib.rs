@@ -24,3 +24,7 @@ pub fn start(canvas_id: &str) -> Result<(), eframe::wasm_bindgen::JsValue> {
 
     eframe::start_web(canvas_id, Box::new(|cc| Box::new(TemplateApp::new(cc))))
 }
+
+pub fn hello() {
+    println!("foo");
+}
